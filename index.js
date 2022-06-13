@@ -10,6 +10,8 @@ const DB_URL = "mongodb://localhost:27017/project"
 const app = express()
 
 app.use(express.json())
+function priv(){}
+
 app.use("/api", router)
 
 async function startApp(){

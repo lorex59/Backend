@@ -9,6 +9,7 @@ class PostService{ //Логика приложения
         const posts = await Post.find()
         return posts
     }
+
     async getOne(id){
         if (!id){
             throw new Error("не указан ID")

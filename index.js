@@ -11,8 +11,6 @@ const DB_URL = "mongodb+srv://lorex59:25092003Danil@project.lfdeyhb.mongodb.net/
 const app = express()
 
 app.use(express.json())
-function priv(){}
-
 app.use("/api", router)
 
 async function startApp(uri, callback){
